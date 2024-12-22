@@ -10,77 +10,93 @@
 </head>
 
 <body>
-<section>
-    <!-- Aqui estará o codigo do Site -->
-    <div>
-        <!-- Aqui estará a barra de nagevação -->
+    <section>
+        <!-- Aqui estará o codigo do Site -->
         <div>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/">Sobre</a></li>
-                    <li><a href="/">Minhas Skills</a></li>
-                    <li><a href="/">Projetos</a></li>
-                    <li><a href="/">Contato</a></li>
-                </ul>
-            </nav>
-    </div>
-                <!-- Aqui estará a FrontPage, com meu nome, minha area, meus contatos e minha foto a direita -->
-        <div id="quem_sou">
+            <!-- Aqui estará a barra de nagevação -->
             <div>
-                <h2 id="fonte_quem_sou">Olá, Eu sou Erick Sena</h2>
-                <h3 id="fonte_quem_sou">Desenvolvedor Full Stack</h3>
-            </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#skills">Minhas Skills</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </section>
 
+        <section class="hidden" id="sobre">
+                    <!-- Aqui estará a FrontPage, com meu nome, minha area, meus contatos e minha foto a direita -->
+            <div id="quem_sou">
+                <div>
+                    <h2 id="fonte_quem_sou">Olá, Eu sou Erick Sena</h2>
+                    <h3 id="fonte_quem_sou">Desenvolvedor Full Stack</h3>
+                </div>
+
+                <div>
+                    <img src="erick.jpg" alt="" id="img">
+                </div>
+            </div>
+        </section>
+        
+        <section class="hidden">
+            <div id="sobre">
+                
+                <div id="fonte"><h4>Sou um desenvolvedor Júnior com formação em Análise e Desenvolvimento de Sistemas.<br>
+                    Tenho experiência em diversas linguagens de programação, como HTML, CSS, JavaScript, Linguagem C e Python. <br>
+                    Estou sempre em busca de aprimorar minhas habilidades e me atualizar com as novas tecnologias,
+                    com o objetivo de construir soluções eficientes e inovadoras.</h4>
+                </div>
+            </div>
+        </section>
+        
+            <section class="hidden" id="skills">
             <div>
-                <img src="erick.jpg" alt="" id="img">
+                <h2 id="fonte2">Minhas Skills</h2>
+                    <ul class="skills">
+                        <li> <img src="html.png" alt=""></li>
+                        <li> <img src="css.png" alt=""></li>
+                        <li> <img src="javascript.png" alt=""></li>
+                        <li> <img src="mysql.png" alt=""></li>
+                        <li> <img src="lingC.png" alt=""></li>
+                        <li> <img src="python.png" alt=""></li>
+                    </ul>
             </div>
-        </div>
-        
-        <div id="sobre">
-            
-            <div id="fonte"><h4>Sou um desenvolvedor Júnior com formação em Análise e Desenvolvimento de Sistemas.<br>
-                 Tenho experiência em diversas linguagens de programação, como HTML, CSS, JavaScript, Linguagem C e Python. <br>
-                 Estou sempre em busca de aprimorar minhas habilidades e me atualizar com as novas tecnologias,
-                 com o objetivo de construir soluções eficientes e inovadoras.</h4>
-            </div>
-        </div>
-        
-        <div>
-            <h2 id="fonte2">Minhas Skills</h2>
+        </section>
+
+        <section class="hidden" id="projetos">
+            <div>
+                <div>
+                    <h2 id="fonte2">Meus Projetos</h2>
+                </div>
+
                 <ul class="skills">
-                    <li> <img src="html.png" alt=""></li>
-                    <li> <img src="css.png" alt=""></li>
-                    <li> <img src="javascript.png" alt=""></li>
-                    <li> <img src="mysql.png" alt=""></li>
-                    <li> <img src="lingC.png" alt=""></li>
-                    <li> <img src="python.png" alt=""></li>
+                    <li><a href="https://lar-da-regina-550espsdc-kihies-projects.vercel.app/" target="blank"><img src="lardaregina.png"></a></li>
+                    <li><a href="https://calculadora-vert-zeta.vercel.app/" target="blank"><img src="calculadora.png"></a></li>
+                    <li><a href="https://social-media-eight-tawny.vercel.app/" target="blank"><img src="social_media.png"></a></li>
                 </ul>
-        </div>
-
-        <div>
-            <div>
-                <h2 id="fonte2">Meus Projetos</h2>
             </div>
+        </section>
 
-            <ul class="skills">
-                <li><a href="https://lar-da-regina-550espsdc-kihies-projects.vercel.app/" target="blank"><img src="lardaregina.png"></a></li>
-                <li><a href="https://calculadora-vert-zeta.vercel.app/" target="blank"><img src="calculadora.png"></a></li>
-                <li><a href="https://social-media-eight-tawny.vercel.app/" target="blank"><img src="social_media.png"></a></li>
-            </ul>
-        </div>
-
-        <div>
-
+        <section class="hidden" id="contato">
             <div>
-                <h2 id="fonte2">Contatos</h2>
-            </div>
 
-            <ul class="skills">
-                <ol><a href="https://github.com/kihie" target="blank"> <img src="github.png" id="img2"></a></ol>
-                <ol><a href="https://www.linkedin.com/in/dev-erick-sena/" target="blank"><img src="linkedin.png" id="img2"></a></ol>
-            </ul>
+                <div>
+                    <h2 id="fonte2">Contatos</h2>
+                </div>
+
+                <ul class="skills">
+                    <ol><a href="https://github.com/kihie" target="blank"> <img src="github.png" id="img2"></a></ol>
+                    <ol><a href="https://www.linkedin.com/in/dev-erick-sena/" target="blank"><img src="linkedin.png" id="img2"></a></ol>
+                </ul>
+            </div>
+        </section>
+        <div class="direitos">
+            Todos Direitos Reservados - Erick sena
         </div>
-</section>
 </body>
+
+<script src="script.js"></script>
 </html>
