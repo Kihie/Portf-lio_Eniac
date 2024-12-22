@@ -1,40 +1,93 @@
 /* Esta borda é somente para testes */
+
 .borda {
     border: 2px solid red;
     margin: 1px;
 }
 
-------------------------------------
+/* Cores usadas na pagina
 
-*{
-    margin: 0;
-    padding: 0;
+Branco: rgb(253, 252, 252)
+Rosa claro: rgb(242, 224, 222)
+Bege acinzentado: rgb(196, 174, 164)
+Verde acinzentado: rgb(146, 164, 144)
+Preto quase puro: rgb(19, 21, 19) */
+
+/* -------------------------------------- */
+
+#img {
+    width: 49vh;
+    padding: 1vh;
 }
 
+
+#sobre {
+    
+    font-size: 22px;
+    color: rgb(19, 21, 19);
+    padding: 4vh;
+}
+
+#quem_sou {
+    margin: 1vh;
+    font-size: 18px;
+    color: rgb(19, 21, 19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+#fonte {
+    display: flex;
+    margin: 5vh;
+    justify-content: center;
+    text-shadow: 2px 2px 10px;
+    transition: 2s;
+}
+
+#fonte_quem_sou {
+    display: flex;
+    margin: 5vh;
+    justify-content: center;
+    text-shadow: 2px 2px 10px;
+    transition: 2s;
+}
+
+#fonte2 {
+    display: flex;
+    margin: 5vh;
+    justify-content: center;
+    transition: 5s;
+}
+
+
 a{
-    color: #fff;
+    color: rgb(19, 21, 19); /* Preto quase puro */
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 a:hover{
-    opacity: 0.7;
+    opacity: 0.2;
 }
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
+    padding-right: 4vh;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #23232e;
+    background-color: rgb(146, 164, 144); /* Verde acinzentado */
     height: 8vh;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
-main {
-    background: url("logo.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+body {
+    background-color: rgb(196, 174, 164); /* Bege acinzentado */
+    background-size: 100%;
+    height: auto;
 }
 
 .nav-list{
@@ -43,7 +96,40 @@ main {
 }
 
 .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 0.1vh;
+    margin-left: 0.9vh;
+}
+
+.skills {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style-type: none;
+}
+
+img {
+    width: 15vh;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1vh;
+}
+
+#img2 {
+    width: 10vh;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.h {
+    height: 370px;
+}
+.w-full {
+    width: 100%;
+}
+
+.object-contain {
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
